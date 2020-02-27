@@ -1,0 +1,455 @@
+:root {
+  --main-font-color: rgb(242, 182, 50);
+  --main-white: #fff;
+  --main-font-dark-gray: #4d4d4d;
+  --main-footer-bg-color:#141414;
+  --main-font-family: 'Courgette', cursive;
+}
+
+
+
+html,
+body,
+header,
+.view {
+  height: 100%;
+}
+
+
+
+.navbar-toggler {
+  border: none;
+  background: transparent !important;
+}
+.navbar-toggler:focus {
+  outline: none;
+  background: transparent !important;
+}
+
+.navbar-toggler .icon-bar {
+  background-color: #fff;
+  transform: rotate(0deg) translate(0px, 0px);
+  transition: ease all .2s;
+}
+
+.navbar-toggler .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+}
+
+.navbar-toggler .icon-bar + .icon-bar {
+  margin-top: 4px;
+}
+
+.icon-bar:nth-child(2) {
+  width: 22px;
+  transition: ease all .2s;
+}
+
+.navbar-toggler:hover > .icon-bar:nth-child(2){
+  width: 22px;
+  transition: ease all .2s;
+}
+.navbar-toggler:active > .icon-bar:nth-child(2){
+  width: 22px;
+  transition: ease all .2s;
+}
+
+.navbar-toggler:not(.collapsed) .icon-bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 4px);
+  transition: ease all .2s;
+}
+
+.navbar-toggler:not(.collapsed) .icon-bar:nth-child(2) {
+  opacity: 0;
+  transition: ease all .2s;
+}
+
+.navbar-toggler:not(.collapsed) .icon-bar:nth-child(3) {
+  transform: rotate(-45deg) translate(4px, -4px);
+  transition: ease all .2s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navbar a {
+  text-transform: uppercase;
+}
+
+.nav-link {
+  font-weight: 400;
+}
+
+.top-link {
+  margin-right: 3rem;
+}
+
+
+
+
+.nav-icon {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+
+
+
+.showcase {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.7), transparent), url('../img/hero.jpeg') bottom no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+
+
+.intro {
+  margin-top: 11rem;
+}
+
+.intro h1 {
+  font-family: var(--main-font-family);
+  color: var(--main-font-color);
+  font-size: 5rem;
+  font-weight: 300 !important;
+}
+
+.intro h5 {
+  font-weight: 400;
+}
+
+.navbar-brand {
+  border-bottom: 2px solid #fff;
+}
+
+
+.main-btn {
+  border: 2px solid var(--main-font-color);
+  font-size: 1rem;
+  letter-spacing: 2px;
+  border-radius: 50px;
+}
+
+.main-btn:hover {
+  color: #fff !important;
+}
+
+.main-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255,255,255,.3), transparent);
+  transition: all 650ms;
+}
+
+.main-btn:hover::before {
+  left: 100%;
+}
+
+
+
+.sec-hd {
+  font-family: var(--main-font-family);
+  color: var(--main-font-color);
+  font-size: 4rem;
+}
+
+.sec-hd-2 {
+  text-transform: uppercase;
+  color: var(--main-font-dark-gray);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+
+
+
+
+.sec-text {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+
+.sec-btn {
+  text-transform: uppercase;
+  color: var(--main-font-color);
+  font-size: 1.2rem;
+  font-weight: 400;
+  border-bottom: 2px solid var(--main-font-color);
+  padding: .55rem;
+  transition: all 650ms;
+  margin-top: 4rem !important;
+}
+
+.sec-btn:hover {
+  background: var(--main-font-color);
+  color: #fff;
+}
+
+
+
+
+
+.story-img {
+  max-height: 550px;
+  margin-top: 3rem;
+}
+
+
+.filler {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../img/between.jpeg') no-repeat center center/cover fixed;
+  width: 100%;
+  max-height: 100px !important;
+}
+
+.between-sec {
+  padding: 25rem 0;
+  text-align: center;
+}
+
+
+
+#menu img {
+  width: 100%;
+  height: 100%;
+  max-height: 250px;
+}
+
+
+
+
+.filler1 {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../img/between2.jpeg') no-repeat center center/cover fixed;
+  width: 100%;
+  max-height: 200px !important;
+}
+
+
+
+
+
+.sub-btn {
+  background: var(--main-font-color) !important;
+}
+
+
+
+
+
+.footer {
+  background: var(--main-footer-bg-color);
+  color: var(--main-font-color);
+}
+
+
+
+
+.soc {
+  display: none;
+}
+
+
+
+.end-text {
+  font-weight: 450; 
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hr-light {
+  border-top: 3px solid #fff;
+  width: 80px;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 740px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 100vh;
+  }
+}
+
+.top-nav-collapse {
+  background-color: rgba(242, 182, 50, 0.95) !important;
+}
+
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important;
+}
+
+@media (max-width: 768px) {
+  .navbar:not(.top-nav-collapse) {
+    background: rgba(242, 182, 50, 0.95) !important;
+  }
+}
+
+h1 {
+  letter-spacing: 4px;
+}
+
+h5 {
+  letter-spacing: 4px;
+}
+
+.hr-light {
+  border-top: 3px solid #fff;
+  width: 80px;
+}
+
+
+
+
+
+@media (max-width: 767px) {
+  .soc {
+    display: block;
+  }
+
+  #menu img {
+    margin-bottom: 1rem;
+    max-height: 450px;
+  }
+
+  #menu  {
+    margin-top: 1rem !important;
+  }
+
+  #story {
+    margin-top: 2rem !important;
+  }
+
+  .top-icons {
+    display: none;
+  }
+
+  .sec-text {
+    padding: 1rem;
+    margin: 1rem auto !important;
+  }
+
+  #story img {
+    margin: 2rem auto !important;
+  }
+
+  #menu img {
+    margin-top: 2rem !important;
+  }
+}
+
+
+@media (max-width: 450px) {
+  .intro h1 {
+    font-size: 4rem;
+  }
+}
+
+
+
+@media (min-width: 991px) {
+  #story img {
+    max-height: 500px;
+    margin-left: 4rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* SIGN UP */
+
+.signup {
+  background: url(/img/signup4.jpg) no-repeat center center/cover;
+  font-family: 'Lato', sans-serif;
+  color: black;
+  text-align: center;
+}
+
+
+
+
+.su-intro {
+  margin-top:8rem;
+}
+
+
+.su-showcase {
+  background: linear-gradient(rgba(242, 182, 50,0.3), rgba(242, 182, 50,0.3)), url('/img/signup8.jpg') no-repeat center center/cover;
+}
+
+.su-showcase h1 {
+  color: #000;
+  font-family: var(--main-font-family);
+}
+
+.su-showcase p {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-weight: 700;
+  font-family: var(--main-font-family);
+}
+
+
+.hr-dark {
+  border-top: 3px solid #000;
+  width: 80px;
+}
+
+
+
+.su-label {
+  color: var(--main-font-color) !important;
+}
